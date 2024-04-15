@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+.container{
+    height:fit-content;
+    width: 100%;
+    background-color: rgb(65, 66, 68);
+    
+}
+
+.navbar{
+    height: 60px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    float: left;
+    padding: 10px 30px;
+}
+.logo img{
+    height: 45px;
+    width: 100px;
+}
+.navbar ul{
+    float:right;
+    padding-right: 10px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top:20px ;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 20px 20px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: rgb(44, 43, 43);
+}
+ul li.active a{
+    background-color: white;
+    color: rgb(44, 43, 43);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content video{
+    margin-top: 2%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 500px;
+    width: 400px;
+    
+}
+
+/* ----BIO---- */
+
+
+.biocontent{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 10%;
+}
+
+.biocol-1{
+    
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-image:linear-gradient(rgba(128, 128, 128, 0.103),rgba(0,0,0,0.7)), url(images/tag.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height:300px;
+    width: 500px;
+    
+    padding-left: 20px;
+   
+    
+   
+}
+.biocol-1 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:60px;
+    color: white;
+    
+   
+}
+.biocol-1 p{
+    padding-top: 20px;
+    padding-right: 10px;
+    justify-content: flex-start;
+    color: white;
+    font-size: 15px;
+    font-family: Century Gothic;
+}
+
+.biocol-2 img{
+    border-radius: 50% ;
+    
+}
+@media(max-width: 676px)  {
+    .container{
+        
+        background-color: rgb(65, 66, 68);
+        
+    }
+    .biocontent{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+/*----------------Address-------*/
+footer{
+    height:fit-content;
+    background-color: rgb(65, 66, 68);
+    
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.addresslink{
+    
+    padding: 30px 50px;
+}
+.addresslink i{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+    
+}
+.addresslink p{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    
+}
+.addlinks ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin-top: 60px;
+    padding-top: 10px;
+    
+}
+.addlinks ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px 20px;
+    color: white;
+    height: 10px;
+    transition: 0.3s;
+    
+}
+
+ 
+.addlinks ul li a:hover{
+    
+    background-color: white;
+    color: rgb(44, 43, 43);
+}
+.copyright-text{
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: inline-flex;
+    
+}
+.copyright-text img{
+    height: 20px;
+    width: auto;
+}
+.map{
+    margin-right: 50px;
+    border-radius: 10px;
+}
+@media(max-width: 676px)  {
+    
+    .address{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .addlinks ul li a{
+        
+        font-size: 15px;
+        
+    }
+    
+}
+/*----------------------------About ME Page-------------------*/
+.heading{
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(rgba(47, 48, 54, 0.7),rgba(27, 27, 29, 0.7)),url(images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    color: white;
+    font-size: 40px;
+}
+
+.row{
+    padding: 30px 0;
+    display: flex;
+}
+
+.col-1 img{
+    padding: 30px 40px;
+    border-radius: 15%;
+}
+
+.col-2{
+    margin-top: 60px;
+}
+.col-2 p{
+    color: white;
+    font-size: 15px;
+    font-family: Century Gothic;
+}
+
+.inner-col {
+    margin-top: 10px;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+   
+}
+
+.inner-col h2{
+    padding-left: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(10, 110, 156);
+}
+.inner-col p{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.inner-col h3{
+    padding-left: 5px;
+    color: rgb(56, 191, 253);
+}
+.inner-col ul {
+    color: white;
+    padding-left: 40px;
+}
+
+.inner-col div{
+    background: #262626 ;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+.inner-col div:hover{
+    background: linear-gradient(rgba(47, 48, 54, 0.7),rgba(47, 48, 54, 0.7));
+    transform: translateY(-10px);
+}
+
+.disclaimer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: inline-flex;
+    
+}
+.disclaimer img{
+    height: 20px;
+    width: auto;
+}
+
+
+@media(max-width: 676px)  {
+    
+    .row{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+/*----------------------------Contact ME Page-------------------*/
+.map p{
+    padding: 30px ;
+    padding-left: 10%;
+    
+}
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left{
+    float:left;
+}
+
+.contact-right{
+    float:right;
+}
+.contact-left{
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-top: 50px;
+
+}
+.contact-heading h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-left: 100px;
+    text-decoration: underline;
+    text-align: center;
+}
+.contact-left p{
+    padding: 10px 60px;
+    
+
+}
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+
+.social-icons {
+
+    margin-left: 70px;
+    
+}
+
+.social-icons a {
+    display:inline-block;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+    transition: transform 0.4s;
+
+}
+.social-icons a i:hover{
+    color: aqua;
+    transform: translateY(-5px);
+
+}
+.contact-right{
+   
+    margin-right: 60px;
+}
+.contact-right form{
+    width: 500px;
+    padding-left: 30px;
+    
+    
+}
+form input, form textarea{
+    width: 450px;
+    outline: none;
+    background: rgb(206, 206, 206);
+    padding-left: 10px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 70px;
+    
+}
+.btn{
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 10px 25px;
+    background: aqua;
+    border-radius: 8px;
+    transition: 0.4s;
+    font-family: monospace;
+}
+
+.btn:hover{
+    background: white;
+}
+@media(max-width: 676px)  {
+    .contact-heading{
+        padding-top: 200px;
+    }
+    iframe{
+        width: 600px;
+        height: 500px;
+    }
+    .contact-row{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
