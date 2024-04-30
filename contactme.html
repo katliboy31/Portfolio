@@ -6,6 +6,7 @@
     <title>Contact Me</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/87400b3b4b.js" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
 </head>
 <body>
     <div class="container">
@@ -52,11 +53,19 @@
                 </div>
                 
                 <div class="contact-right">
-                    <form >
-                        <input type="text" name="Name"  placeholder="Your Name" required>
-                        <input type="text" name="Email"  placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="Submit" class="btn">Submit</button><br><br>
+                    <form onsubmit="handleSubmit(event)" >
+                    <label>
+                    Your email:
+                    <input id="email" type="email" name="email" >
+                    <span class="hidden" id="email-span">Input a valid email</span>
+                    </label>
+                    <label>
+                     Your message:
+                    <textarea id="message" name="message" ></textarea>
+                    <span class="hidden" id="message-span">Input a valid message</span>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
                     </form>
                 </div>
             </div>

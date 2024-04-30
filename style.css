@@ -391,7 +391,7 @@ form input, form textarea{
     margin-right: 70px;
     
 }
-.btn{
+button {
     display: block;
     margin: 30px auto;
     width: fit-content;
@@ -402,7 +402,7 @@ form input, form textarea{
     font-family: monospace;
 }
 
-.btn:hover{
+button:hover{
     background: white;
 }
 @media(max-width: 676px)  {
@@ -420,4 +420,8 @@ form input, form textarea{
         flex-direction: column;
     }
     
+}
+.hidden
+{
+    display: none;
 }
